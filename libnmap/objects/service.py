@@ -207,6 +207,27 @@ class NmapService(object):
         """
         return self._owner
 
+       @property
+    def product(self):
+        """
+            Accessor for service owner if available
+        """
+        return self._service['product'] if 'product' in self._service else ''
+
+    @property
+    def version(self):
+        """
+            Accessor for service owner if available
+        """
+        return self._service['version'] if 'version' in self._service else ''
+
+    @property
+    def extrainfo(self):
+        """
+            Accessor for service owner if available
+        """
+        return self._service['extrainfo'] if 'extrainfo' in self._service else ''  
+    
     @property
     def banner(self):
         """
