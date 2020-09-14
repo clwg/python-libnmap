@@ -207,7 +207,7 @@ class NmapService(object):
         """
         return self._owner
 
-       @property
+    @property
     def product(self):
         """
             Accessor for service owner if available
