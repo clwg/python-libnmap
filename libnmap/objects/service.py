@@ -210,21 +210,21 @@ class NmapService(object):
     @property
     def product(self):
         """
-            Accessor for service owner if available
+            Accessor for service product if available
         """
         return self._service['product'] if 'product' in self._service else ''
 
     @property
     def version(self):
         """
-            Accessor for service owner if available
+            Accessor for service version if available
         """
         return self._service['version'] if 'version' in self._service else ''
 
     @property
     def extrainfo(self):
         """
-            Accessor for service owner if available
+            Accessor for service extrainfo if available
         """
         return self._service['extrainfo'] if 'extrainfo' in self._service else ''  
     
